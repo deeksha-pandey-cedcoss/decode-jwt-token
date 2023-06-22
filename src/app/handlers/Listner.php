@@ -43,7 +43,13 @@ class Listner extends Injectable
 
 
         $rolejwt = $tokenObject->getClaims()->getPayload();
-        print_r($rolejwt['sub']);
-        echo "<br>";
+        if ($rolejwt['sub'] !== "") {
+            print_r($rolejwt['sub']);
+            echo "<br>";
+        }
+        else {
+            echo "Invalid Token details";
+            die;
+        }
     }
 }
