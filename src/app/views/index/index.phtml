@@ -1,0 +1,48 @@
+<?php
+echo "<h1>Hello User Welcome</h1>";
+echo PHP_EOL;
+echo $this->tag->linkTo(
+    [
+        'signup',
+        'Signup Here!', 'class' => 'm-3 btn btn-primary'
+    ]
+);
+echo $this->tag->linkTo(
+    [
+        'login',
+        'Login Here!', 'class' => 'm-3 btn btn-primary'
+    ]
+);
+echo $this->tag->linkTo(
+    [
+        '/login/logout',
+        'Logout Here!', 'class' => 'm-3 btn btn-primary'
+    ]
+);
+echo $this->tag->linkTo(
+    [
+        'componentA/index',
+        'Component A Here!', 'class' => 'm-3 btn btn-primary'
+    ]
+);
+
+echo $this->tag->linkTo(
+    [
+        'componentB',
+        'Component B Here!', 'class' => 'm-3 btn btn-primary'
+    ]
+);
+
+echo $this->tag->linkTo(
+    [
+        'componentC',
+        'Component C Here!', 'class' => 'm-3 btn btn-primary'
+    ]
+);
+
+echo $this->tag->linkTo(
+    [
+        'componentD',
+        'Component D Here!', 'class' => 'm-3 btn btn-primary'
+    ]
+);
